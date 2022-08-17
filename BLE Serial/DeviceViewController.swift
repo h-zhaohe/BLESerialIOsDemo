@@ -77,10 +77,10 @@ class DeviceViewController: UIViewController, BluetoothOperationsConsumer {
         self.dismissKeyboard()
     }
     @IBAction func infoButtonPressed(_ sender: Any) {
-        let alert = UIAlertController(title: "Info", message: "This app uses the Nordic UART Service to connect to peripherals and exchange data. The esp32 Arduino Example to work with this app can be found at \"https://github.com/hammad1201/NordicUARTExampleEsp32\"", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Info", message: "This app uses the Nordic UART Service to connect to peripherals and exchange data. The esp32 Arduino Example to work with this app can be found at \"https://github.com/h-zhaohe/BLESerialIOsDemo\"", preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "Visit Link", style: .default, handler: {action in
-            UIApplication.shared.open(URL(string: "https://github.com/hammad1201/NordicUARTExampleEsp32")!)
+            UIApplication.shared.open(URL(string: "https://github.com/h-zhaohe/BLESerialIOsDemo")!)
         }))
         
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
